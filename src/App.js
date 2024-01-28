@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CoronaForCountry from "./components/CoronaForCountry";
 import RecordedCorona from "./components/RecordedCorona";
 import CoronaForContinent from "./components/CoronaForContinent";

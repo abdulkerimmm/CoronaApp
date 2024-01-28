@@ -25,7 +25,7 @@ const CoronaForCountry = () => {
 
   useEffect(() => {
     fetchData();
-  }, [queryText]);
+  }, [queryText, fetchData]);
 
   return (
     <>
