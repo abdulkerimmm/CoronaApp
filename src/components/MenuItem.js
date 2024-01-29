@@ -24,8 +24,9 @@ const MenuItem = () => {
       <ul className="flex flex-row  mt-4 font-semibold text-xs space-x-8 mt-0 ">
         {menuItems.map((item) => {
           return (
-            <li>
+            <li key={item.value}>
               <a
+                href=""
                 onClick={() => {
                   setKey(item.value);
                 }}

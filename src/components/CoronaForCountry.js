@@ -1,5 +1,5 @@
 import { API_URL, API_TOKEN } from "../const";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card";
 
@@ -8,7 +8,7 @@ const CoronaForCountry = () => {
   const [queryText, setQueryText] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setLoading(true);
     const response = await axios.get(
       `${API_URL}countriesData?country=${queryText}`,
@@ -21,11 +21,11 @@ const CoronaForCountry = () => {
     setLoading(false);
     setData(response.data.result);
     console.log(response);
-  };
+  }, [queryText]);
 
   useEffect(() => {
     fetchData();
-  }, [queryText, fetchData]);
+  }, [queryText]);
 
   return (
     <>
