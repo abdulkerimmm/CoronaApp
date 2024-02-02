@@ -19,7 +19,7 @@ function App() {
   return (
     <div style={backgroundStyle}>
       <Header />
-      <div className="md:container md:mx-auto p-8  page-content ">
+      <div className="md:container md:mx-auto p-8  ">
         {key === 1 && <CoronaForCountry></CoronaForCountry>}
         {key === 2 && <RecordedCorona></RecordedCorona>}
         {key === 3 && <CoronaForContinent></CoronaForContinent>}
