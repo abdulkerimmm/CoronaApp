@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/CoronaApp/static/css/main.e767ca17.css",
-    "main.js": "/CoronaApp/static/js/main.8e9c1e42.js",
+    "main.css": "/CoronaApp/static/css/main.6911b5f3.css",
+    "main.js": "/CoronaApp/static/js/main.0a0b6f8e.js",
     "index.html": "/CoronaApp/index.html",
-    "main.e767ca17.css.map": "/CoronaApp/static/css/main.e767ca17.css.map",
-    "main.8e9c1e42.js.map": "/CoronaApp/static/js/main.8e9c1e42.js.map"
+    "main.6911b5f3.css.map": "/CoronaApp/static/css/main.6911b5f3.css.map",
+    "main.0a0b6f8e.js.map": "/CoronaApp/static/js/main.0a0b6f8e.js.map"
   },
   "entrypoints": [
-    "static/css/main.e767ca17.css",
-    "static/js/main.8e9c1e42.js"
+    "static/css/main.6911b5f3.css",
+    "static/js/main.0a0b6f8e.js"
   ]
 }
