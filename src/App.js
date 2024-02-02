@@ -7,10 +7,10 @@ import { context1 } from "./contextApi/Store";
 
 function App() {
   const [key] = useContext(context1);
+
   return (
     <div className="min-h-screen bg-cover bg-center bg-gray-200">
       <Header />
-
       <div className="md:container md:mx-auto p-8  page-content  ">
         {key === 1 && <CoronaForCountry></CoronaForCountry>}
         {key === 2 && <RecordedCorona></RecordedCorona>}

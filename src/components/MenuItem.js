@@ -4,7 +4,7 @@ import { context1 } from "../contextApi/Store";
 const MenuItem = () => {
   const [key, setKey] = useContext(context1);
 
-  const [menuItems] = useState([
+  const menuItems = [
     {
       title: "Coronavirus Values by Countries",
       value: 1,
@@ -17,7 +17,7 @@ const MenuItem = () => {
       title: "Coronavirus Values by Continents",
       value: 3,
     },
-  ]);
+  ];
 
   return (
     <div className="w-auto block">
@@ -26,7 +26,6 @@ const MenuItem = () => {
           return (
             <li key={item.value}>
               <a
-                href=""
                 onClick={() => {
                   setKey(item.value);
                 }}
